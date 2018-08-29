@@ -22,12 +22,7 @@ void triangle(int n)
 
 int main(int argc, char *argv[])
 {
-    int n;
-    scanf("%d", &n);
+    int n = atoi(argv[1]);
     triangle(n);
     return 0;
 }
-
-
-
-
