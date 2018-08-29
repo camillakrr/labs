@@ -40,8 +40,8 @@ void figure3(int n)
 
 int main(int argc, char *argv[])
 {
-    int n, m;
-    scanf("%d %d", &m, &n);
+    int m = atoi(argv[1]);
+    int n = atoi(argv[2]);
     if (m == 1)
     {
         figure1(n);
@@ -56,7 +56,3 @@ int main(int argc, char *argv[])
     }
     return 0;
 }
-
-
-
-
