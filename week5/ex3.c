@@ -11,7 +11,6 @@ void* produce(void *arg) {
         if (itemCount == 7) {
             printf("Producer sleeps\n");
             usleep(10000000);
-
         }
         itemCount++;
         printf("Item produced %d\n", itemCount);
@@ -35,25 +34,17 @@ void* consume(void *arg){
         if (itemCount==6)
             printf("Wake up producer\n");
             pthread_cond_signal(&empty);
-
     }
 }
 
 int main(){
-
-
     pthread_t producer, consumer;
     pthread_cond_init(&full, 0);
     pthread_cond_init(&empty, 0);
-
-
-
     pthread_create(&producer, NULL, produce, NULL);
     pthread_create(&consumer, NULL, consume, NULL);
-
     pthread_join(producer, 0);
     pthread_join(consumer, 0);
-
     pthread_cond_destroy(&full);
     pthread_cond_destroy(&empty);
 }
