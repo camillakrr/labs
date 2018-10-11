@@ -1,0 +1,2 @@
+2^(16)/2^(13) = 2^(3) = 8 (entries in the page table)
+Answer: 8
