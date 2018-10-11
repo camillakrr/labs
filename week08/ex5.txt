@@ -1,0 +1,2 @@
+Physical address is real "location" of memory cell in RAM, they refer to real memory location, they exist physically, they cannot be accessed by user.
+Virtual addresses are generated to programs and mapped to their physical addresses during runtime, they can be accessed by user.
