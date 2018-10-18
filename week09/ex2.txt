@@ -1,0 +1,2 @@
+To increase hit ratio and descreas miss ratio make as much equal references in a row as possible.
+To decrease hit ratio and increase miss ratio do the opposite.
