@@ -1,0 +1,3 @@
+660 - owner and group can read and write file
+775 - owner, group and other can read and write file, but only owner and group can execute it
+777 - owner, group and others have all the permissions
