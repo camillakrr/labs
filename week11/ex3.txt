@@ -1,0 +1,13 @@
+1)
+Hello
+Hello
+//empty string
+
+2)
+Hello
+//empty string
+//empty string
+//empty string
+
+Since "printf" is line-buffered it will print until it meets "\n".
+So when the \n occured or buffer is full we will see something in the output.
